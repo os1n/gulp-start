@@ -11,8 +11,8 @@ yarn-error.log*
 # build artifacts
 # build/
 
-# gulp src
-src/
+# gulp src - left for inspection
+# src/ 
 
 # Runtime data
 pids

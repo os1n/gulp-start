@@ -68,10 +68,9 @@
     color: $col-white;
     text-decoration: none;
     
-}
-
-.page-header__header-content__page-logo:hover {
-    color: $bg-icon;
+    &:hover{
+        color: $bg-icon;
+    }
 }
 
 
@@ -99,52 +98,52 @@
     -webkit-transition: all linear 0.2s; 
     -o-transition: all linear 0.2s; 
     transition: all linear 0.2s; 
-}
-.page-header__header-content__navigation__items:last-child {
-    margin-right: 0;
-}
-.page-header__header-content__navigation__items:nth-child(0n+6) {
-    margin-right: 1.5rem;
-}
 
-.page-header__header-content__navigation__items::after {
-    content: "";
-    margin: 10px 0px;
-    padding: 0px;
-    width: 100%;
-    height: 3px;
-    background-color: transparent;
-    display: block;    
-    -webkit-transition: all linear 0.2s;    
-    -o-transition: all linear 0.2s;    
-    transition: all linear 0.2s;
-}
+    &:last-child {
+        margin-right: 0;
+    }
+    &:nth-child(0n+6) {
+        margin-right: 1.5rem;
+    }
 
-.page-header__header-content__navigation__items__links {
-    font-family: $font-f_first;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 1.2;
-    
-    text-decoration: none;
-    color: $col-white;
-}
+    &::after {
+        content: "";
+        margin: 10px 0px;
+        padding: 0px;
+        width: 100%;
+        height: 3px;
+        background-color: transparent;
+        display: block;    
+        -webkit-transition: all linear 0.2s;    
+        -o-transition: all linear 0.2s;    
+        transition: all linear 0.2s;
+    }
 
-.page-header__header-content__navigation__items__links:hover {
-    color: $bg-icon;
-    -webkit-transition-duration: 0.2s;
-            -o-transition-duration: 0.2s;
-            transition-duration: 0.2s;
-}
+    &__links {
+        font-family: $font-f_first;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.2;
+        
+        text-decoration: none;
+        color: $col-white;
+    }
 
-.page-header__header-content__navigation__items:hover::after {
-    background-color: $bg-icon;
-    -webkit-transition-duration: 0.2s;
-            -o-transition-duration: 0.2s;
-            transition-duration: 0.2s;
-}
+    &__links:hover {
+        color: $bg-icon;
+        -webkit-transition-duration: 0.2s;
+                -o-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+    }
 
+    &:hover::after {
+        background-color: $bg-icon;
+        -webkit-transition-duration: 0.2s;
+                -o-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+    }
+}
 
 .navigation__icon {
     width: 18px;
