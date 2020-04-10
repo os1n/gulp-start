@@ -11,5 +11,6 @@
 @import 'normalize.scss';
 @import 'base.scss';
 
-@import 'variables.scss';
-@import 'style.scss';
+@import 'variables';
+@import 'helpers/mixins';
+@import 'style';
