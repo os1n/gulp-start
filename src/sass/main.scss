@@ -7,10 +7,13 @@
 //  Использовать & для вложенности селектора при эффекте ховера.
 //  Для однотипным элементов, по желанию и возможности, используйте миксины, шаблоны и т.п.
 
+@import 'variables';
+@import 'helpers/mixins';
 
 @import 'normalize.scss';
 @import 'base.scss';
 
-@import 'variables';
-@import 'helpers/mixins';
+
 @import 'style';
+
+@import 'components/header';
